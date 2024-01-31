@@ -7,6 +7,8 @@ return choice;
 }
 
 
+
+
 function playRound(playerSelection, computerSelection) { 
 if (playerSelection==computerSelection){
 return "tie";
@@ -25,11 +27,15 @@ return "tie";
 }
 }
 
+
+function playGame(){    
+    let playerScore= 0;
+    let computerScore= 0;
+    console.log("Lets Start")
+let(i=0; i < 5; i++) {
 const playerSelection = prompt("Choose your option").toLowerCase();
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
-
-let playerScore= 0;
-let computerScore= 0;
-
-function playGame(){}
+    }
+    console.log("The Game is over")
+}
